@@ -5,6 +5,7 @@ pipeline {
         //customWorkspace '/home/sandeep/'
         }
     } 
+    cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
     stages {
         stage ('checkout') {
             steps {
