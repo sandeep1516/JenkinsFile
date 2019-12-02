@@ -5,7 +5,8 @@ pipeline {
         //customWorkspace '/home/sandeep/'
         }
     } 
-    cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
+    //cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
+	cleanWs disableDeferredWipeout: true, deleteDirs: true
     stages {
         stage ('checkout') {
             steps {
