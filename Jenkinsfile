@@ -2,11 +2,7 @@ pipeline {
     agent {
         node {
         label 'Build_server'
-	sh 'pwd'
-	//sh 'hostname'
-	//sh 'cd /home/ec2-user/workspace'
-	//sh 'rm -rf *'
-        //customWorkspace '/home/sandeep/'
+	//customWorkspace '/home/sandeep/'
         }
     }
     //cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
@@ -22,6 +18,10 @@ pipeline {
         stage ('build') {
             steps {
                 echo "building the code"
+		sh 'pwd'
+		sh 'hostname'
+		sh 'cd /home/ec2-user/workspace'
+		sh 'rm -rf *'
                 sh '/opt/maven/bin/mvn clean install'
                 echo "build sucess"
             }
