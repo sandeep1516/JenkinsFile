@@ -21,7 +21,7 @@ pipeline {
 		sh 'pwd'
 		sh 'hostname'
 		sh 'cd /home/ec2-user/workspace'
-		sh 'rm -rf *'
+		//sh 'rm -rf *'
                 sh '/opt/maven/bin/mvn clean install'
                 echo "build sucess"
             }
