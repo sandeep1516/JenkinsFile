@@ -6,7 +6,7 @@ pipeline {
         }
     } 
     //cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
-	cleanWs disableDeferredWipeout: true, deleteDirs: true
+	//cleanWs disableDeferredWipeout: true, deleteDirs: true
     stages {
         stage ('checkout') {
             steps {
