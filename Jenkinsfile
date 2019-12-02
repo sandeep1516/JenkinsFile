@@ -2,13 +2,13 @@ pipeline {
     agent {
         node {
         label 'Build_server'
+	sh 'pwd'
+	//sh 'hostname'
+	//sh 'cd /home/ec2-user/workspace'
+	//sh 'rm -rf *'
         //customWorkspace '/home/sandeep/'
         }
-    } 
-	sh 'pwd'
-	sh 'hostname'
-	sh 'cd /home/ec2-user/workspace'
-	sh 'rm -rf *'
+    }
     //cleanWs(patterns: [[pattern: '', type: 'INCLUDE']])
 	//cleanWs disableDeferredWipeout: true, deleteDirs: true
     stages {
