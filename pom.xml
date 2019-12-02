@@ -5,7 +5,7 @@
   <artifactId>com.borewellapp1.buil.maven.java</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>com.borewellapp1.buil.maven.java Maven Webapp</name>
+  <name>borewell Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
